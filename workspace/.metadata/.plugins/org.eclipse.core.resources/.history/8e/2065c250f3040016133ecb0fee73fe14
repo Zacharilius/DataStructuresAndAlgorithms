@@ -1,0 +1,17 @@
+package sorting;
+
+public class Util {
+	private String[] array = {"Apple","Mango","Peach","Banana","Orange","Grapes","Watermelon","Tomato"};
+	
+	public String[] getArray() {
+		return array;
+	}
+	
+	public boolean isArraySorted(String[] array) {
+		return true;
+	}
+	
+	public String toString(String[] array) {
+		return "String";
+	}
+}

@@ -1,0 +1,14 @@
+package sorting;
+
+public class Util {
+	private String[] array = {"Apple","Mango","Peach","Banana","Orange","Grapes","Watermelon","Tomato"};
+
+	
+	public Util() {
+		// nothing
+	}
+	
+	public String[] getArray() {
+		return array;
+	}
+}
