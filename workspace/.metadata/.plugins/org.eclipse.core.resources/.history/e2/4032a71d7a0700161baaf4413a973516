@@ -1,0 +1,20 @@
+package sorting;
+import org.junit.Test;
+
+import sorting.BubbleSort;
+import sorting.Util;
+
+import static org.junit.Assert.*;
+
+/*
+ * Tests the SelectionSort class sorts an array.
+ * @author Zacharilius
+ */
+public class SelectionSortTest {
+    @Test public void testSelectionSort() {
+    	String[] stringArray = Util.getArray();
+    	System.out.println(Util.toString(stringArray));
+        SelectionSort.sortArray(stringArray);
+        assertTrue("array should return sorted", Util.isArraySorted(stringArray));
+    }
+}

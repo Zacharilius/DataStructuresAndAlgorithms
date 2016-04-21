@@ -7,7 +7,7 @@ package sorting;
 public class BubbleSort {
     public static void sortArray(String[] array) {
     	for (int i = 0; i < array.length; i++) {
-    		for (int j = 1; j < array.length; j++) {
+    		for (int j = i + 1; j < array.length; j++) {
         		if (array[j - 1].compareTo(array[j]) > 0) {
         			String temp = array[j - 1];
         			array[j - 1] = array[j];

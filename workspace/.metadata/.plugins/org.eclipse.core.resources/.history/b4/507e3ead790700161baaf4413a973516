@@ -1,0 +1,23 @@
+package sorting;
+/*
+ * Implements the Bubble Sort algorithm 
+ *
+ * @author Zacharilius
+ */
+public class SelectionSort {
+    public static void sortArray(String[] array) {
+    	for (int i = 0; i < array.length; i++) {
+    		int lowestValueIndex = i;
+    		String lowestValue = array[i];
+    		for (int j = i + 1; j < array.length; j++) {
+        		if (array[lowestValueIndex].compareTo(array[j]) < 0) {
+        			lowestValue = array[j];
+        			
+        		}
+    		}
+    		String temp = array[j - 1];
+			array[j - 1] = array[j];
+			array[j] = temp;
+    	}
+    }
+}
